@@ -8,8 +8,7 @@
 
         // verify password and confirmPass to be match
         if(trim($password) == trim($confirmPassword)){
-          $encryptPass = password_hash(trim($password),PASSWORD_BCRYPT);
-             echo $encryptPass;
+          
 
             $host = "localhost";
             $database = "ecommerceb2";
@@ -30,11 +29,11 @@
     
 
                 if($stmt->execute()){
-                    header ("location:/regitration.php?success=Registration successful");
+                    header ("location: /registration.php?success=Registration successful");
                     exit;
 
                 } else {
-                    header ("location: /regitration.php?error=Insert Error");
+                    header ("location: /registration.php?error=Insert Error");
                     exit;
                 }
 
@@ -43,8 +42,8 @@
             }
             
          } else { 
-             header ("location: /regitration.php?error=Password Mismatch"); 
-                    exit; 
+             header ("location: /registration.php?error=Password Mismatch"); 
+                    
         }
 
     
