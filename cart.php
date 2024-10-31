@@ -1,7 +1,9 @@
-<?php require_once("Includes/header.php") ?>
+<?php require_once("includes/header.php") ?>
 
     <!-- Navbar -->
-    <?php require_once("Includes/navbar.php") ?>
+    <?php 
+    require_once(__DIR__."/app/config/Directories.php");
+    require_once("includes/navbar.php") ?>
 
     <!-- Shopping Cart -->
     <div class="container content my-5">

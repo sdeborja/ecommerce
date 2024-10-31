@@ -1,4 +1,19 @@
-<?php require_once("Includes/header.php") ?>
+<?php 
+    session_start();
+    require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
+    require_once(ROOT_DIR."includes/header.php"); 
+
+    if(isset($_SESSION["error"])){
+        $messageErr = $_SESSION["error"];
+        unset($_SESSION["error"]);
+    }
+    
+    if(isset($_SESSION["success"])){
+        $messageErr = $_SESSION["success"];
+        unset($_SESSION["success"]);
+    }
+    ?>
+    
     <!-- Navbar -->
     <?php require_once("Includes/navbar.php") ?>
 
@@ -11,26 +26,27 @@
                         <h4>Create Your Account</h4>
                     </div>
                     <div class="card-body">
-
-                    <?php if(isset($_GET["success"])){    ?>
+                     
+                    <!-- Message Response -->
+                    <?php if(isset($messageSucc)){    ?>
 
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
-                               <strong> <?php echo $_GET["success"]; ?></strong>
+                               <strong><?php echo $messageSucc; ?></strong>
                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                </div>
 
                                <?php } ?>
 
-                               <?php if(isset($_GET["error"])){    ?>
+                               <?php if(isset($messageErr)){    ?>
                                   
                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                               <strong><?php echo $_GET["error"]; ?> </strong>
+                               <strong><?php echo $messageErr; ?> </strong>
                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                </div>
 
                                <?php } ?>
 
-                        <form action="authRegister.php" method="POST">
+                        <form action="app/auth/authRegister.php" method="POST">
                             <div class="mb-3">
                                 <label for="fullName" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
@@ -59,8 +75,5 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <!-- Footer -->
+    <?php require_once(ROOT_DIR."includes/footer.php"); ?>
