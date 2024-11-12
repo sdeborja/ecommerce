@@ -93,6 +93,7 @@ require_once("includes/header.php") ?>
             </div>
         </div>
     </div>
+    <!-- Footer -->
 <?php require_once(ROOT_DIR."includes/footer.php"); ?>
 
 

@@ -7,8 +7,6 @@ include("..\config\DatabaseConnect.php");
     $db = new DatabaseConnect();
     $conn = $db->connectDB();
 
-   
-    
     if($_SERVER["REQUEST_METHOD"] == "POST"){
        $productId = $_POST["id"];
      
