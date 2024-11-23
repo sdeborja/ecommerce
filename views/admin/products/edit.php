@@ -31,7 +31,7 @@ if(isset($_SESSION["error"])){
 }
 
 if(isset($_SESSION["success"])){
-    $messageErr = $_SESSION["success"];
+    $messageSucc = $_SESSION["success"];
     unset($_SESSION["success"]);
 }
 ?>
