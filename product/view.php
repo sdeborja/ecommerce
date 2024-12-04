@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="homepage.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="admin-dashboard.html">Dashboard</a>
@@ -33,7 +33,7 @@
                         <ul class="dropdown-menu" aria-labelledby="adminDropdown">
                             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                         </ul>
                     </li>
                 </ul>

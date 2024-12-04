@@ -40,7 +40,7 @@
                             <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
                             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                         </ul>
                     </li>
                     <?php } ?>
@@ -48,3 +48,38 @@
             </div>
         </div>
     </nav>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var dropdownToggle = document.querySelector('.dropdown-toggle');
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+
+    if (dropdownToggle && dropdownMenu) {
+        // For desktop
+        if (window.innerWidth >= 992) {
+            dropdownToggle.addEventListener('mouseenter', function() {
+                dropdownMenu.classList.add('show');
+            });
+
+            dropdownToggle.parentNode.addEventListener('mouseleave', function() {
+                dropdownMenu.classList.remove('show');
+            });
+        }
+
+        // For mobile/tablet
+        dropdownToggle.addEventListener('click', function(e) {
+            if (window.innerWidth < 992) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            }
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    }
+});
+</script>

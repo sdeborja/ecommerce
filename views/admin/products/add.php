@@ -23,6 +23,7 @@ if(isset($_SESSION["success"])){
     <!-- Product Maintenance Form -->
     <div class="container my-5">
         <h2>Product Maintenance</h2>
+
           <!-- Message Response -->
           <?php if(isset($messageSucc)){    ?>
 
