@@ -1,6 +1,6 @@
 <div class="col-md-4 mb-4">
         <div class="card">
-                <img src="<?php echo BASE_URL. $product["image_url"]; ?>" class="card-img-top mx-auto" alt="Product Image" style="height:300px;width:300px">
+                <img src="<?php echo BASE_URL. $product["image_url"]; ?>" class="card-img-top mx-auto" alt="Product Image" style="height:250px;width:250px">
                 <div class="card-body">
                         <h5 class="card-title"><?php echo $product["product_name"]; ?> </h5>
                         <p class="card-text">Category: <?php echo $product["category_id"]; ?>Electronics</p>

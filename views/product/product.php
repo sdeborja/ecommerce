@@ -67,7 +67,7 @@ if(isset($_SESSION["success"])){
             <div class="row">
                 <!-- Product Image -->
                 <div class="col-md-6">
-                    <img src="<?php echo BASE_URL.$product["image_url"]; ?>" alt="Product Image" class="img-fluid border border-warning border-5" style="height:500px">
+                    <img src="<?php echo BASE_URL.$product["image_url"]; ?>" alt="Product Image" class="img-fluid border border-warning border-5 mx-auto" style="height:500px">
                 </div>
 
                 <!-- Product Information --> 
@@ -108,7 +108,7 @@ if(isset($_SESSION["success"])){
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 1">
+                        <img src="https://via.placeholder.com/200" class="card-img-top mx-auto" alt="Related Product 1">
                         <div class="card-body">
                             <h5 class="card-title">Related Product 1</h5>
                             <p class="card-text">$30.00</p>
@@ -118,7 +118,7 @@ if(isset($_SESSION["success"])){
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 2">
+                        <img src="https://via.placeholder.com/200" class="card-img-top mx-auto" alt="Related Product 2">
                         <div class="card-body">
                             <h5 class="card-title">Related Product 2</h5>
                             <p class="card-text">$40.00</p>
@@ -128,7 +128,7 @@ if(isset($_SESSION["success"])){
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 3">
+                        <img src="https://via.placeholder.com/200" class="card-img-top mx-auto" alt="Related Product 3">
                         <div class="card-body">
                             <h5 class="card-title">Related Product 3</h5>
                             <p class="card-text">$35.00</p>
@@ -138,7 +138,7 @@ if(isset($_SESSION["success"])){
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 4">
+                        <img src="https://via.placeholder.com/200" class="card-img-top mx-auto" alt="Related Product 4">
                         <div class="card-body">
                             <h5 class="card-title">Related Product 4</h5>
                             <p class="card-text">$45.00</p>

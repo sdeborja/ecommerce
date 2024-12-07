@@ -37,7 +37,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 1">
+                    <img src="https://via.placeholder.com/200" class="card-img-top mx-auto" alt="Related Product 1">
                     <div class="card-body">
                         <h5 class="card-title">Related Product 1</h5>
                         <p class="card-text">$30.00</p>
@@ -47,7 +47,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 2">
+                    <img src="https://via.placeholder.com/200" class="card-img-top mx-auto" alt="Related Product 2">
                     <div class="card-body">
                         <h5 class="card-title">Related Product 2</h5>
                         <p class="card-text">$40.00</p>

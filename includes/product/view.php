@@ -59,7 +59,7 @@
             <!-- Loop through each product and generate a card dynamically -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <img src="https://via.placeholder.com/300" class="card-img-top mx-auto" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Product Name 1</h5>
                         <p class="card-text">Category: Electronics</p>
@@ -74,7 +74,7 @@
             <!-- Another Product Card Example -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <img src="https://via.placeholder.com/300" class="card-img-top mx-auto" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Product Name 2</h5>
                         <p class="card-text">Category: Fashion</p>
@@ -89,7 +89,7 @@
             <!-- Example for Another Product -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+                    <img src="https://via.placeholder.com/300" class="card-img-top mx-auto" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Product Name 3</h5>
                         <p class="card-text">Category: Home Appliances</p>

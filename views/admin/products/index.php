@@ -20,7 +20,7 @@
    
 
     <!-- add page-guard -->
-    <?php require_once(ROOT_DIR."views/components/page-guard.php"); ?>
+    <?php require_once(ROOT_DIR."views/components/page-guard.php"); ?> 
 
     <!-- Page Header -->
     <div class="container mt-5">

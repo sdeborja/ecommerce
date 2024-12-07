@@ -15,7 +15,7 @@
     ?>
     
     <!-- Navbar -->
-    <?php require_once("Includes/navbar.php") ?>
+    <?php require_once("includes/navbar.php") ?>
 
     <!-- Registration Form -->
     <div class="container content my-5">
@@ -52,8 +52,8 @@
                                 <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
                             </div>
                             <div class="mb-3">
-                                <label for="username" class="form-label">Email Address</label>
-                                <input type="text" class="form-control" id="email" name="username" placeholder="Enter your email" required>
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="email" name="username" placeholder="Enter your username/email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>

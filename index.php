@@ -5,7 +5,7 @@ include(ROOT_DIR."app/product/get_products.php");
 require_once("includes/header.php") ?>
 
     <!-- Navbar -->
-    <?php require_once("Includes/navbar.php") ?>
+    <?php require_once("includes/navbar.php") ?>
 
     <!-- Hero Section -->
     <div class="container-fluid bg-primary text-white text-center py-5">
@@ -38,7 +38,7 @@ require_once("includes/header.php") ?>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Category 3">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top mx-auto" alt="Category 3">
                     <div class="card-body text-center">
                         <h5 class="card-title">Home & Kitchen</h5>
                         <a href="#" class="btn btn-primary">Shop Now</a>

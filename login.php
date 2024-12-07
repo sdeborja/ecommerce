@@ -1,13 +1,29 @@
 <?php 
+ini_set('display_errors','1');
+ini_set('display_start_up_errors','1');
+error_reporting(E_ALL);
 
-require_once(__DIR__."/app/config/Directories.php");
-require_once("includes/header.php") ?>
+
+session_start();
+require_once(__DIR__."/app/config/Directories.php"); 
+require_once(ROOT_DIR."includes/header.php");
+
+    if(isset($_SESSION["error"])){
+        $messErr = $_SESSION["error"];
+        unset($_SESSION["error"]);
+    }
+    
+    if(isset($_SESSION["success"])){
+    $messSucc = $_SESSION["success"];
+    unset($_SESSION["success"]);
+}
+?>
 
     <!-- Navbar -->
     <?php require_once("includes/navbar.php") ?>
 
     <!-- Login Form -->
-    <div class="container content mt-5">
+    <div class="container content my-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
@@ -15,10 +31,27 @@ require_once("includes/header.php") ?>
                         <h4>Login to Your Account</h4>
                     </div>
                     <div class="card-body">
+
+                    <?php if(isset($messSucc)){ ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong><?php echo $messSucc; ?></strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <?php } ?>
+
+
+                    <?php if(isset($messErr)){ ?>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong><?php echo $messErr; ?></strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <?php } ?>
+
+                       
                         <form action="app/auth/authLogin.php" method="POST">
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your email" required>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
@@ -38,7 +71,8 @@ require_once("includes/header.php") ?>
         </div>
     </div>
     
-    <!-- Footer -->
+    
+
     <?php require_once(ROOT_DIR."includes/footer.php"); ?>
 
     

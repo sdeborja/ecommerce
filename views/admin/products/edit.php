@@ -6,13 +6,13 @@ include(ROOT_DIR."app/config/DatabaseConnect.php");
     $db = new DatabaseConnect();
     $conn = $db->connectDB();
 
-    //this variable will hold product data from db
+    
     $product = [];
     $id = @$_GET['id'];
 
     try {
         
-        $sql  = "SELECT * FROM products WHERE products.id = $id "; //select statement here
+        $sql  = "SELECT * FROM products WHERE products.id = $id "; 
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         $product = $stmt->fetch();
@@ -158,14 +158,14 @@ if(isset($_SESSION["success"])){
     const imagePreview = document.getElementById('imagePreview');
 
     fileInput.addEventListener('change', function(event) {
-        const file = event.target.files[0]; // Get the selected file
+        const file = event.target.files[0];
 
         if (file) {
             const reader = new FileReader();
 
             reader.onload = function(e) {
                 imagePreview.src = e.target.result;
-                imagePreview.style.display = 'block'; // Show the image
+                imagePreview.style.display = 'block'; 
             }
 
             reader.readAsDataURL(file);

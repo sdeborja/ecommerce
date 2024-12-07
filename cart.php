@@ -6,7 +6,7 @@ include(ROOT_DIR."app/config/DatabaseConnect.php");
     $db = new DatabaseConnect();
     $conn = $db->connectDB();
 
-    //this variable will hold product data from db
+    
     $carts = [];
     $userId = $_SESSION["user_id"];
     $subtotal = 0;
@@ -18,7 +18,7 @@ include(ROOT_DIR."app/config/DatabaseConnect.php");
         $sql  = "SELECT carts.id,products.product_name, carts.unit_price, carts.quantity, carts.total_price "
         ." FROM carts " 
         ." LEFT JOIN products ON products.id = carts.product_id "
-        ." WHERE carts.user_id = $userId AND carts.status = 0 "; //select statement here
+        ." WHERE carts.user_id = $userId AND carts.status = 0 "; 
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         $carts = $stmt->fetchAll();
@@ -94,7 +94,7 @@ if(isset($_SESSION["success"])){
  
                         </tr>
                         <?php 
-                            //sum of all total_price
+                            
                             $subtotal = $subtotal + $indvCart["total_price"];
                           
                         } 

@@ -13,9 +13,9 @@ session_start();
           
 
             $host = "localhost";
-            $database = "ecommerceb2";
-            $dbusername = "root";
-            $dbpassword = "";
+            $database = "ecommerce_sdeborja";
+            $dbusername = "sdeborja";
+            $dbpassword = "Sd3b0rja_2024";
             
             $dsn = "mysql: host=$host;dbname=$database;";
             try {

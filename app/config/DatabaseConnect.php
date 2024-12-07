@@ -3,9 +3,9 @@
 
 class DatabaseConnect {
     private $host = "localhost";
-    private $database = "ecommerceb2";
-    private $dbusername = "root";
-    private $dbpassword = "";
+    private $database = "ecommerce_sdeborja";
+    private $dbusername = "sdeborja";
+    private $dbpassword = "Sd3b0rja_2024";
     private $charset    = 'utf8mb4';
     private $conn = null;
 
